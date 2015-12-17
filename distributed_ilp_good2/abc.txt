@@ -1,0 +1,1218 @@
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.154113
+Iteration:    62   Dual objective     =            16.106186
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            95.052573
+Iteration:    62   Dual objective     =            15.344671
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            92.598737
+Iteration:    73   Dual objective     =            37.621821
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            58.902608
+Iteration:   163   Dual objective     =            58.104981
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            95.166113
+Iteration:    63   Dual objective     =            10.160357
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.048685
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.100439
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.029525
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.044732
+Iteration:    62   Dual objective     =             4.043437
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.049353
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.044242
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            91.225336
+Iteration:    70   Dual objective     =            18.164317
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.074940
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.031614
+Iteration:    62   Dual objective     =             4.037138
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.027405
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            95.189950
+Iteration:    62   Dual objective     =            18.158153
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            94.249519
+Iteration:    67   Dual objective     =            14.146448
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.033623
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.090374
+Iteration:    62   Dual objective     =             8.097354
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            88.266997
+Iteration:    85   Dual objective     =            24.206863
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            94.138844
+Iteration:    66   Dual objective     =            12.096776
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.032062
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.151904
+Iteration:    69   Dual objective     =            14.109315
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.154430
+Iteration:    70   Dual objective     =            14.098499
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.191886
+Iteration:    69   Dual objective     =            22.423425
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.094180
+Iteration:    62   Dual objective     =             6.084401
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.026336
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.037713
+Iteration:    62   Dual objective     =             4.039659
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.080866
+Iteration:    62   Dual objective     =             4.062706
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            94.138880
+Iteration:    68   Dual objective     =            12.095799
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            91.214848
+Iteration:    67   Dual objective     =            14.165647
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.090526
+Iteration:    62   Dual objective     =             6.078136
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.064749
+Iteration:    62   Dual objective     =             4.054330
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            91.410026
+Iteration:    70   Dual objective     =            18.271876
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.085040
+Iteration:    62   Dual objective     =             4.075399
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.089692
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.097683
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.030899
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.067513
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            87.801094
+Iteration:    92   Dual objective     =            57.890373
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.033020
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.023866
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.033250
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.039603
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.065177
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            89.367276
+Iteration:    92   Dual objective     =            46.449069
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.039719
+Iteration:    62   Dual objective     =             4.044008
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.033834
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.031240
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.031140
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            81.632829
+Iteration:   101   Dual objective     =            36.404405
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            90.396170
+Iteration:    79   Dual objective     =            20.290930
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            67.795746
+Iteration:   186   Dual objective     =            67.475938
+Iteration:   348   Dual objective     =            50.158215
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.071641
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.030085
+Iteration:    62   Dual objective     =             4.029381
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.036756
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.037539
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.041821
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.038539
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.032703
+Iteration:    62   Dual objective     =             4.041448
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            70.768375
+Iteration:   138   Dual objective     =            47.493793
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.046773
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.037786
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.055084
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.063020
+Iteration:    62   Dual objective     =            12.055029
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            92.203581
+Iteration:    73   Dual objective     =            23.110141
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.070193
+Iteration:    62   Dual objective     =             6.061438
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            86.303536
+Iteration:    87   Dual objective     =            28.240272
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.036106
+Iteration:    62   Dual objective     =             4.035896
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.054913
+Iteration:    62   Dual objective     =             6.051278
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Parallel mode: deterministic, using up to 23 threads for concurrent optimization.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            54.159803
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            95.087736
+Iteration:    62   Dual objective     =            23.785966
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            86.375728
+Iteration:    89   Dual objective     =            30.183328
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.033621
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.028867
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            91.207076
+Iteration:    79   Dual objective     =            22.110563
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.114394
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            88.352990
+Iteration:    89   Dual objective     =            43.446884
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            95.107597
+Iteration:    63   Dual objective     =            10.095617
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.031140
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            92.457777
+Iteration:    72   Dual objective     =            23.867648
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.052825
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.039087
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            98.043617
+Iteration:    62   Dual objective     =             4.048224
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            97.252595
+Iteration:    62   Dual objective     =             6.205904
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            94.256106
+Iteration:    65   Dual objective     =            23.187160
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            94.157300
+Iteration:    64   Dual objective     =            24.807217
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.196040
+Iteration:    70   Dual objective     =            18.145453
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            77.459042
+Iteration:   107   Dual objective     =            38.315284
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            92.210793
+Iteration:    72   Dual objective     =            16.111374
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.180965
+Iteration:    67   Dual objective     =            19.861913
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            96.032149
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time =    0.00 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            93.175190
+Iteration:    65   Dual objective     =            18.153051
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 103 columns.
+All rows and columns eliminated.
+Presolve time =    0.00 sec.
+Parallel mode: deterministic, using up to 23 threads for concurrent optimization.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            61.868140
