@@ -1,0 +1,5 @@
+Nils = 0	NilsCorrect = 0
+NilsPredAsNonNils = 0	NonNilsPredAsNils = 642
+Weight	0.5	Fw	0.501589319771138
+Precision	Recall	F1	Fw
+0.6575	0.40544707091469684	0.501589319771138	0.501589319771138

@@ -1,0 +1,71 @@
+Runs with loss types specified via a parameter
+
+Tmp file is tmp1/
+Weigting param of F is 0.5
+Frac Sim is 0.9
+Dataset Stats file is dataset/train-riedel-10p.1.stats
+Rho is 0
+isExhaustive is 0isLPrelaxation is 1Max feature index 202552
+Size of w vector 10532704
+Number of epochs (OnlineSVM Learning) : 40
+Number of chunks (OnlineSVM Learning) : 20
+--3: After 2nd malloc 
+(ONLINE SVM) Completed the memory alloc for the parameters
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Calling Java to split dataset for EPOCH 40
+Executing cmd : java -Xmx1G -cp java/bin:java/lib/*  javaHelpers.splitDatasetILP dataset/reidel_trainSVM.data 20 
+CWD /home/sandip/sandip_mtp/codebase/distributed_ilp
+Creating 20 chunks from this dataset
+Storing the chunks in dataset/reidel_trainSVM.data.chunks
+dataset/reidel_trainSVM.data.chunks exits. So deleting existing contents.
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.9 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.30 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.39 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.40 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.29 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.41 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.0 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.37 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.16 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.36 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.18 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.6 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.43 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.12 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.25 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.23 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.44 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.2 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.24 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.27 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.4 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.31 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.1 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.19 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.34 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.7 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.33 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.42 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.20 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.14 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.15 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.5 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.17 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.35 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.38 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.26 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.3 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.10 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.32 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.11 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.28 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.13 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.21 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.22 is deleted. 
+/home/sandip/sandip_mtp/codebase/distributed_ilp/dataset/reidel_trainSVM.data.chunks/chunk.8 is deleted. 
+Reading Dataset
+Creating Batches
+----- Problem writing - Done -----
+----- Solving LP -----
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.0
+Cannot open input file dataset/reidel_trainSVM.data.chunks/chunk.0!

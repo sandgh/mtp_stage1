@@ -1,0 +1,1955 @@
+Runs with loss types specified via a parameter
+
+Tmp file is tmp1/
+Weigting param of F is 0.5
+Frac Sim is 0.9
+Dataset Stats file is dataset/train-riedel-10p.1.stats
+Rho is 0
+isExhaustive is 0isLPrelaxation is 1Max feature index 202052
+Size of w vector 10506704
+Number of epochs (OnlineSVM Learning) : 1
+Number of chunks (OnlineSVM Learning) : 1
+--3: After 2nd malloc 
+(ONLINE SVM) Completed the memory alloc for the parameters
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Calling Java to split dataset for EPOCH 1
+Executing cmd : java -Xmx1G -cp java/bin:java/lib/*  javaHelpers.splitDataset dataset/train-riedel-10p.2.data 1 
+CWD /home/sandip/sandip_mtp/codebase/minibatch_random1
+Creating 1 chunks from this dataset
+Storing the chunks in dataset/train-riedel-10p.2.data.chunks
+Reading Dataset
+Creating Batches
+Writing Batches to File
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/train-riedel-10p.2.data.chunks/chunk.0
+(ONLINE LEARNING) : EPOCH 0
+C: 5
+Cdash: 5
+epsilon: 0.5
+sample.n: 458
+sm->sizePsi: 10506704
+Loss Type : 0
+--
+0 --> combination (Hamming + F1) + unnormalised
+-----
+OUTER ITER 0
+ITER 0 
+(before cutting plane) 
+
+LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ 
+-Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.093 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.688 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 2059.0 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :8.804 s.
+[admm] Log: Starting point (Local Search) .... 225.96409489207096 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 226.0 : (4117, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.027 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.92 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 3391.0 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.961 s.
+[admm] Log: Starting point (Local Search) .... -1632.281250580648 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 66.90097423302699 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.054 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.301 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 3354.681240867133 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 3 :8.361 s.
+[admm] Log: Starting point (Local Search) .... -1095.7246006111613 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 180.54143405758933 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.012 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.321 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.017467248908296942	Objective Value : 3231.0828823879583 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 4 :7.338 s.
+[admm] Log: Starting point (Local Search) .... -762.2580424760521 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 273.99312339853014 : (981, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.369 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 3166.885331247563 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 5 :7.381 s.
+[admm] Log: Starting point (Local Search) .... -704.2807672481443 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 293.599143659481 : (1029, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.012 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.426 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 3141.9038120884898 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 6 :7.448 s.
+[admm] Log: Starting point (Local Search) .... -651.2506520828214 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 282.123662238256 : (981, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.048 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 3082.3856935476524 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 7 :6.075 s.
+[admm] Log: Starting point (Local Search) .... -574.6634344710824 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 286.71371578239416 : (973, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.044 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.782 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 3041.323759751873 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 8 :7.831 s.
+[admm] Log: Starting point (Local Search) .... -483.5289394233959 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 282.508967082174 : (1098, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.036 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.875 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 2991.380379968782 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 9 :7.917 s.
+[admm] Log: Starting point (Local Search) .... -425.58307613932726 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 289.99786312968496 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.032 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.37 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 2990.664566125877 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 10 :6.406 s.
+[admm] Log: Starting point (Local Search) .... -377.8559209270806 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 281.1057018269472 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.032 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.118 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 2922.133837748696 match count is 1
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.021834061135371178; Num of iters completed : 11	Objective diff : 68.53072837718128
+Max violators: 1.566667 mins
+Running CCCP inner loop solver: 
+ITER 1
+.Mosek solver: 0.000000 mins
+alpha[0]: 5, cut_error[0]: 0
+sigma_k: 0
+alphasum: 5
+g^T d: -269.52302
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.227 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.3 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.08296943231441048	Objective Value : 44411.75909786974 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :7.579 s.
+[admm] Log: Starting point (Local Search) .... -1606.035905107929 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 16.0 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.046 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.722 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.6506550218340611	Objective Value : 44692.736169246724 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :5.78 s.
+[admm] Log: Starting point (Local Search) .... -2167.478689370054 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 13.171572875253805 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.03 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.127 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.6419213973799127	Objective Value : 44666.11847552569 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :7.162 s.
+[admm] Log: Starting point (Local Search) .... -2637.441808490346 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 8.124898807926883 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.008 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.69 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.6703056768558951	Objective Value : 44667.58966227508 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :6.702 s.
+[admm] Log: Starting point (Local Search) .... -2528.4418084903255 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 5.642135623730951 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.007 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.078 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.6724890829694323	Objective Value : 44660.419001513765 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 5 :7.088 s.
+[admm] Log: Starting point (Local Search) .... -2431.3964582668127 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 5.323631679071374 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.006 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.71 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.6724890829694323	Objective Value : 44656.80654656745 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 6 :5.721 s.
+[admm] Log: Starting point (Local Search) .... -2342.8065792361353 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 4.3628295230090535 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.431 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.6681222707423581	Objective Value : 44649.45170781149 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 7 :5.446 s.
+[admm] Log: Starting point (Local Search) .... -2261.544217539206 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 4.599458326009418 : (61, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.685 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.6724890829694323	Objective Value : 44642.45038296087 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 8 :6.699 s.
+[admm] Log: Starting point (Local Search) .... -2208.970318038091 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 4.651459846600609 : (34, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.165 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.6724890829694323	Objective Value : 44634.31079133749 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 9 :6.176 s.
+[admm] Log: Starting point (Local Search) .... -2178.0036154776976 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 4.5804926434431295 : (32, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.012 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.788 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.6746724890829694	Objective Value : 44629.44478620796 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 10 :4.889 s.
+[admm] Log: Starting point (Local Search) .... -2149.5134067445606 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 4.199393839394756 : (35, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.432 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.6746724890829694	Objective Value : 44621.52631076739 match count is 2
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.6746724890829694; Num of iters completed : 11	Objective diff : 7.918475440572365
+Max violators: 1.400000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 81.9969
+ITER REG_MASTER_OBJ: -106.8794
+ITER EXPECTED_DESCENT: -139.7615
+ITER PRIMLA_OBJ_B: 32.8821
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 134.7615
+ITER PRIMAL_LOWER_BOUND: 0.0000
+ITER V_K: -207.1423
+NULL STEP
+ITER 1: 1.416667 mins
+ITER 2
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.29599253, cut_error[0]: 0
+alpha[1]: 4.7040075, cut_error[1]: 15.829694
+sigma_k: 14.8926
+alphasum: 5
+g^T d: -2.4176929
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.135 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.618 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 3848.9352143724186 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :8.778 s.
+[admm] Log: Starting point (Local Search) .... 14.964094892070955 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 210.0 : (3669, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.037 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.943 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.04585152838427948	Objective Value : 5156.982125458388 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.993 s.
+[admm] Log: Starting point (Local Search) .... -1609.8964742698015 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 67.87153698150411 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.047 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.842 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.05021834061135371	Objective Value : 5077.790428326066 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :6.901 s.
+[admm] Log: Starting point (Local Search) .... -1176.2745229083014 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 108.48140583779788 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.169 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.05021834061135371	Objective Value : 4996.470859680859 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :6.204 s.
+[admm] Log: Starting point (Local Search) .... -965.1328205604781 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 88.29618173800708 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.045 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.657 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.048034934497816595	Objective Value : 4909.579293199207 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :7.71 s.
+[admm] Log: Starting point (Local Search) .... -813.8620106211397 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 158.4099654948058 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.051 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.678 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4876.989236442385 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :7.735 s.
+[admm] Log: Starting point (Local Search) .... -869.9937575343529 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 138.62111144778578 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.074 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.59 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.048034934497816595	Objective Value : 4819.671948969416 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :6.669 s.
+[admm] Log: Starting point (Local Search) .... -741.5789611220999 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 192.0189071123682 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.038 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.925 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4778.152515525766 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :6.966 s.
+[admm] Log: Starting point (Local Search) .... -651.5905421696787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 194.79907379208672 : (917, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.014 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.601 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.05240174672489083	Objective Value : 4736.686531932137 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :7.617 s.
+[admm] Log: Starting point (Local Search) .... -602.1436637564302 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 200.67444522279726 : (973, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.222 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4730.514388264172 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :7.241 s.
+[admm] Log: Starting point (Local Search) .... -565.3868025874606 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 188.6276248951256 : (981, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.855 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4667.224869564616 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.05458515283842795; Num of iters completed : 11	Objective diff : 69.46166236752106
+Max violators: 1.566667 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 22.0712
+ITER REG_MASTER_OBJ: 11.3121
+ITER EXPECTED_DESCENT: -21.5700
+ITER PRIMLA_OBJ_B: 32.8821
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 1.6774
+ITER PRIMAL_LOWER_BOUND: 9.6347
+ITER V_K: -22.4087
+SERIOUS STEP
+ITER 2: 1.600000 mins
+ Inner loop optimization finished.
+OUTER ITER 0: 4.600000 mins
+primal objective: 22.0712
+decrement: -22.0712
+cooling_eps: 1.25
+(onlinesvm) Before writing params to file (onlinesvm) After writing params to file Executing cmd (online SVM): export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx8G -cp java/bin:java/lib/* javaHelpers.InferLatentVarHelperAll tmp1/inf_lat_var_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0 458 
+(OnlineSVM) .. finished outer_iter 0
+OUTER ITER 1
+ITER 0 
+(before cutting plane) 
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.108 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.762 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 3848.9352143724186 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :8.889 s.
+[admm] Log: Starting point (Local Search) .... 14.964094892070955 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 210.0 : (3669, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.033 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.357 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.04585152838427948	Objective Value : 5156.982125458388 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :7.403 s.
+[admm] Log: Starting point (Local Search) .... -1609.8964742698015 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 67.87153698150411 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.908 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.05021834061135371	Objective Value : 5077.790428326066 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :7.932 s.
+[admm] Log: Starting point (Local Search) .... -1176.2745229083014 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 108.48140583779788 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.012 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.132 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.05021834061135371	Objective Value : 4996.470859680859 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :7.148 s.
+[admm] Log: Starting point (Local Search) .... -965.1328205604781 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 88.29618173800708 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.343 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.048034934497816595	Objective Value : 4909.579293199207 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :7.359 s.
+[admm] Log: Starting point (Local Search) .... -813.8620106211397 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 158.4099654948058 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.051 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.366 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4876.989236442385 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :6.421 s.
+[admm] Log: Starting point (Local Search) .... -869.9937575343529 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 138.62111144778578 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.029 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.458 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.048034934497816595	Objective Value : 4819.671948969416 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :7.489 s.
+[admm] Log: Starting point (Local Search) .... -741.5789611220999 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 192.0189071123682 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.024 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.048 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4778.152515525766 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :7.075 s.
+[admm] Log: Starting point (Local Search) .... -651.5905421696787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 194.79907379208672 : (917, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.806 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.05240174672489083	Objective Value : 4736.686531932137 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :6.836 s.
+[admm] Log: Starting point (Local Search) .... -602.1436637564302 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 200.67444522279726 : (973, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.046 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.92 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4730.514388264172 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :6.97 s.
+[admm] Log: Starting point (Local Search) .... -565.3868025874606 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 188.6276248951256 : (981, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.041 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.889 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.05458515283842795	Objective Value : 4667.224869564616 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.05458515283842795; Num of iters completed : 11	Objective diff : 69.46166236752106
+Max violators: 1.600000 mins
+Running CCCP inner loop solver: 
+ITER 1
+.Mosek solver: 0.000000 mins
+alpha[0]: 5, cut_error[0]: 0
+sigma_k: 0
+alphasum: 5
+g^T d: -97.439022
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.173 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.721 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.08296943231441048	Objective Value : 21647.667937507067 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.914 s.
+[admm] Log: Starting point (Local Search) .... -1643.035905107929 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 16.0 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.024 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.637 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.6637554585152838	Objective Value : 21875.631604430684 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.692 s.
+[admm] Log: Starting point (Local Search) .... -2217.9137182125983 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 13.171572875253805 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.042 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.458 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.6593886462882096	Objective Value : 21867.215898238424 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :7.512 s.
+[admm] Log: Starting point (Local Search) .... -2700.5785432550606 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 3.0046719011557643 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.013 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.6921397379912664	Objective Value : 21855.534727994833 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :5.043 s.
+[admm] Log: Starting point (Local Search) .... -2606.0785432550397 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.9116953723304593 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.015 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.29 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.6921397379912664	Objective Value : 21850.790074707766 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 5 :6.308 s.
+[admm] Log: Starting point (Local Search) .... -2522.896814492024 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.122819323447919 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.006 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.419 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.6877729257641921	Objective Value : 21846.730019724942 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 6 :6.429 s.
+[admm] Log: Starting point (Local Search) .... -2447.7791290466516 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.115154892460593 : (21, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.006 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.64 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.6921397379912664	Objective Value : 21841.25098004383 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 7 :6.65 s.
+[admm] Log: Starting point (Local Search) .... -2354.421904213431 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.3402850167830986 : (7, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.988 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.6921397379912664	Objective Value : 21835.545479623954 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 8 :5.014 s.
+[admm] Log: Starting point (Local Search) .... -2264.1947218003047 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.9205823656451275 : (14, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.023 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.224 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.6921397379912664	Objective Value : 21827.75743455644 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 9 :6.249 s.
+[admm] Log: Starting point (Local Search) .... -2235.67286049963 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 2.025938925564115 : (13, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.999 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.6943231441048034	Objective Value : 21824.188865051994 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 10 :7.01 s.
+[admm] Log: Starting point (Local Search) .... -2211.5269581967486 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.6982099905306876 : (13, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.332 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.6943231441048034	Objective Value : 21817.42745863583 match count is 2
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.6943231441048034; Num of iters completed : 11	Objective diff : 6.761406416164391
+Max violators: 1.400000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 42.1672
+ITER REG_MASTER_OBJ: -29.7120
+ITER EXPECTED_DESCENT: -51.7832
+ITER PRIMLA_OBJ_B: 22.0712
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 46.7832
+ITER PRIMAL_LOWER_BOUND: 0.0000
+ITER V_K: -75.1749
+NULL STEP
+ITER 1: 1.450000 mins
+ITER 2
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.49779633, cut_error[0]: 0
+alpha[1]: 4.5022037, cut_error[1]: 6.1437767
+sigma_k: 5.5321068
+alphasum: 5
+g^T d: -0.94945522
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.214 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.082 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4022.7559095910333 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :8.334 s.
+[admm] Log: Starting point (Local Search) .... -294.03590510792907 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 196.0 : (3605, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.076 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.59 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5422.541998905097 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :7.704 s.
+[admm] Log: Starting point (Local Search) .... -1834.7370947033314 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 58.11417766862341 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.056 s.
+[combine hamming + F1] Ajay: Time taken model lag : 8.607 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5279.737584144691 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 3 :8.673 s.
+[admm] Log: Starting point (Local Search) .... -1446.6016447577356 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 42.77537823960244 : (458, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.023 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.251 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5172.24968306761 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 4 :6.284 s.
+[admm] Log: Starting point (Local Search) .... -1146.6700053119412 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.11033994951482 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.023 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.496 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 5099.897950525535 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 5 :7.525 s.
+[admm] Log: Starting point (Local Search) .... -1067.510659980876 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 81.838848821749 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.052 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.008 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 5065.344633937154 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 6 :7.064 s.
+[admm] Log: Starting point (Local Search) .... -967.7603157220299 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 83.90345222012948 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.288 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 5010.891187066194 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 7 :7.316 s.
+[admm] Log: Starting point (Local Search) .... -863.6129868527513 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 96.461748639129 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.577 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 4969.4092593121795 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 8 :5.774 s.
+[admm] Log: Starting point (Local Search) .... -782.7578214497474 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 93.46002157623607 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.039 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.385 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 4923.013957388376 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 9 :6.427 s.
+[admm] Log: Starting point (Local Search) .... -708.9530159173609 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 120.89717366175947 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.021 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.461 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4911.629951195486 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 10 :7.485 s.
+[admm] Log: Starting point (Local Search) .... -687.2715280433172 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 89.83431421166823 : (805, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.062 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4852.33649428594 match count is 1
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.021834061135371178; Num of iters completed : 11	Objective diff : 59.29345690954597
+Max violators: 1.550000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.9105
+ITER REG_MASTER_OBJ: 10.9298
+ITER EXPECTED_DESCENT: -11.1415
+ITER PRIMLA_OBJ_B: 22.0712
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.6094
+ITER PRIMAL_LOWER_BOUND: 10.3204
+ITER V_K: -11.4461
+SERIOUS STEP
+ITER 2: 1.600000 mins
+ Inner loop optimization finished.
+OUTER ITER 1: 4.683333 mins
+primal objective: 15.9105
+decrement: 6.1608
+cooling_eps: 1.25
+(onlinesvm) Before writing params to file (onlinesvm) After writing params to file Executing cmd (online SVM): export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx8G -cp java/bin:java/lib/* javaHelpers.InferLatentVarHelperAll tmp1/inf_lat_var_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0 458 
+(OnlineSVM) .. finished outer_iter 1
+OUTER ITER 2
+ITER 0 
+(before cutting plane) 
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.199 s.
+[combine hamming + F1] Ajay: Time taken model lag : 9.266 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4022.7559095910333 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :9.582 s.
+[admm] Log: Starting point (Local Search) .... -294.03590510792907 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 196.0 : (3605, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.086 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.829 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5422.541998905097 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.948 s.
+[admm] Log: Starting point (Local Search) .... -1834.7370947033314 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 58.11417766862341 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.118 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.7 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5279.737584144691 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 3 :7.831 s.
+[admm] Log: Starting point (Local Search) .... -1446.6016447577356 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 42.77537823960244 : (458, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.306 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 5172.24968306761 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 4 :7.337 s.
+[admm] Log: Starting point (Local Search) .... -1146.6700053119412 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.11033994951482 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.012 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.464 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 5099.897950525535 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 5 :7.481 s.
+[admm] Log: Starting point (Local Search) .... -1067.510659980876 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 81.838848821749 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.574 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.024017467248908297	Objective Value : 5065.344633937154 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 6 :7.597 s.
+[admm] Log: Starting point (Local Search) .... -967.7603157220299 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 83.90345222012948 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.788 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 5010.891187066194 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 7 :5.823 s.
+[admm] Log: Starting point (Local Search) .... -863.6129868527513 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 96.461748639129 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.036 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.296 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 4969.4092593121795 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 8 :7.337 s.
+[admm] Log: Starting point (Local Search) .... -782.7578214497474 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 93.46002157623607 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.027 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.313 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.019650655021834062	Objective Value : 4923.013957388376 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 9 :6.342 s.
+[admm] Log: Starting point (Local Search) .... -708.9530159173609 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 120.89717366175947 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.489 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4911.629951195486 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 10 :6.509 s.
+[admm] Log: Starting point (Local Search) .... -687.2715280433172 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 89.83431421166823 : (805, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.817 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.021834061135371178	Objective Value : 4852.33649428594 match count is 1
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.021834061135371178; Num of iters completed : 11	Objective diff : 59.29345690954597
+Max violators: 1.533333 mins
+Running CCCP inner loop solver: 
+ITER 1
+.Mosek solver: 0.000000 mins
+alpha[0]: 5, cut_error[0]: 0
+sigma_k: 0
+alphasum: 5
+g^T d: -68.683633
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.079 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.84 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.08296943231441048	Objective Value : 19308.248017183778 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.967 s.
+[admm] Log: Starting point (Local Search) .... -1659.035905107929 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 15.0 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.179 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.6724890829694323	Objective Value : 19520.42870343171 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.227 s.
+[admm] Log: Starting point (Local Search) .... -2240.984786024464 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 12.878679656440353 : (1109, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.053 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.66 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.6681222707423581	Objective Value : 19514.743058513126 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :6.725 s.
+[admm] Log: Starting point (Local Search) .... -2727.691062951254 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 3.0046719011557643 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.767 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.7052401746724891	Objective Value : 19503.68276739034 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :5.794 s.
+[admm] Log: Starting point (Local Search) .... -2640.6910629512327 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.5249440263823302 : (85, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.015 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.599 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.7030567685589519	Objective Value : 19498.816693461104 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 5 :6.616 s.
+[admm] Log: Starting point (Local Search) .... -2562.8758973342187 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0736915940687513 : (82, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.007 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.029 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.7030567685589519	Objective Value : 19494.8479900171 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 6 :7.039 s.
+[admm] Log: Starting point (Local Search) .... -2490.615949922094 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (0, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.006 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.559 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.7074235807860262	Objective Value : 19491.102850643776 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 7 :6.57 s.
+[admm] Log: Starting point (Local Search) .... -2393.4790803587784 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (0, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.009 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.766 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.7074235807860262	Objective Value : 19483.73561360567 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 8 :5.778 s.
+[admm] Log: Starting point (Local Search) .... -2302.969412366923 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.7279220613578543 : (12, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.021 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.122 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.7096069868995634	Objective Value : 19476.91300687796 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 9 :6.148 s.
+[admm] Log: Starting point (Local Search) .... -2261.793077708408 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.8167565149909852 : (10, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.498 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.7096069868995634	Objective Value : 19472.972461585636 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 10 :5.52 s.
+[admm] Log: Starting point (Local Search) .... -2239.052093752814 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.5226552535599098 : (12, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.764 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.7096069868995634	Objective Value : 19466.83765528254 match count is 2
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.7096069868995634; Num of iters completed : 11	Objective diff : 6.134806303096411
+Max violators: 1.416667 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 36.8418
+ITER REG_MASTER_OBJ: -20.6079
+ITER EXPECTED_DESCENT: -36.5184
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 31.5184
+ITER PRIMAL_LOWER_BOUND: 0.0000
+ITER V_K: -52.2776
+NULL STEP
+ITER 1: 1.433333 mins
+ITER 2
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: -0.4858277
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.099 s.
+[combine hamming + F1] Ajay: Time taken model lag : 7.423 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.275778064209 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :7.538 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.035 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.011 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156073356 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.058 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.306 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.464497618948 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :6.329 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.695 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.513119214932 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.711 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.082 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.4879499954795 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :6.106 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.291 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.6027740918935 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.317 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.059 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.05 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.109149641145 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :5.111 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.036 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.836 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.335047126129 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :4.877 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.042 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.017 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.5850400788095 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :5.061 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.066 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.473050442377 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :4.086 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.372 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.981456659395 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60358341941446
+Max violators: 1.200000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 2: 1.233333 mins
+ITER 3
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 1.8359815e-11, cut_error[2]: 0.49964368
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14247355
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.175 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.402 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757780753327 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.592 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.028 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.825 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156081823 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :4.865 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.807 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.46449762768 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :4.83 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.461 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.512998873961 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :5.476 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.782 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.485892056398 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :4.797 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.405 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.6024589975 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :5.43 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.156 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.108712846161 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.185 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.349 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.33353205157 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :4.369 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.26 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.586163929225 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :4.28 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.047 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.476247103622 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :5.067 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.169 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.982000480988 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60416344823716
+Max violators: 1.066667 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 3: 1.100000 mins
+ITER 4
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 1.0898604e-12, cut_error[2]: 0.49964368
+alpha[3]: 1.0899448e-12, cut_error[3]: 0.49952196
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14235777
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.08 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.972 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757780654656 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.075 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.035 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.111 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156074302 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :5.158 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.273 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.46449761993 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :4.294 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.01 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.163 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.512998865582 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.177 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.382 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.487087779997 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :5.405 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.748 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.602523378757 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.77 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.024 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.271 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.110176324633 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.297 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.796 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.334248719091 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :3.825 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.727 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.586163920366 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :3.745 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.378 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.476247094505 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :5.398 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.123 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.982000472511 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60416344785517
+Max violators: 1.000000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 4: 1.016667 mins
+ITER 5
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 4.4458768e-11, cut_error[2]: 0.49964368
+alpha[3]: 4.4454232e-11, cut_error[3]: 0.49952196
+alpha[4]: 4.4473358e-11, cut_error[4]: 0.49952196
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14235777
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.081 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.056 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757781444207 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :5.155 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.029 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.974 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.277965195303 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.015 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.679 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.464457564988 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :4.701 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.01 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.512726293113 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :5.031 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.285 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.485448134439 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :5.314 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.15 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.602483417135 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :6.172 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.147 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.108462591404 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.174 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.564 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.332764391468 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :5.583 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.463 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.583925721973 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :5.481 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.066 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.47319440717 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :4.084 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.695 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.978145587534 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60578013443956
+Max violators: 1.100000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 5: 1.133333 mins
+ITER 6
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 7.2085229e-12, cut_error[2]: 0.49964368
+alpha[3]: 7.2101645e-12, cut_error[3]: 0.49952196
+alpha[4]: 7.2089645e-12, cut_error[4]: 0.49952196
+alpha[5]: 7.2021058e-12, cut_error[5]: 0.49958746
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14238118
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.09 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.18 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757780814695 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.286 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.034 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.207 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156086472 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :4.253 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.511 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.464497632482 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :5.539 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.807 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.5129988791705 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.836 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.371 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.4871448549475 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :4.396 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.021 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.302 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.6030414648485 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :5.329 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.059 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.277 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.110206260441 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.338 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.909 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.335081396997 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :3.929 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.169 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.587747309793 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :4.19 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.544 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.476322795643 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :4.563 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.643 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.982115738758 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60563157103479
+Max violators: 1.050000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 6: 1.050000 mins
+ITER 7
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 1.3836113e-10, cut_error[2]: 0.49964368
+alpha[3]: 1.3837689e-10, cut_error[3]: 0.49952196
+alpha[4]: 1.3836899e-10, cut_error[4]: 0.49952196
+alpha[5]: 1.3821028e-10, cut_error[5]: 0.49958746
+alpha[6]: 1.3840656e-10, cut_error[6]: 0.49954746
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14238452
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.082 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.658 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757784790942 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :4.755 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.03 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.158 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.282245209036 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :6.229 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.805 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.465826552255 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :5.826 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.098 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.513217210325 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :5.113 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.01 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.971 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.487587326723 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :3.985 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.04 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.602705039262 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.063 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.925 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.11049841692 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :3.953 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.029 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.886 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.332826883136 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :3.918 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.363 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.585732034226 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :4.381 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.282 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.47310476597 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :5.301 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.889 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.9836209977875 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60211103643815
+Max violators: 1.033333 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6689
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 7: 1.066667 mins
+ITER 8
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 3.4822267e-13, cut_error[2]: 0.49964368
+alpha[3]: 3.4827398e-13, cut_error[3]: 0.49952196
+alpha[4]: 3.4825986e-13, cut_error[4]: 0.49952196
+alpha[5]: 3.4785852e-13, cut_error[5]: 0.49958746
+alpha[6]: 3.4828119e-13, cut_error[6]: 0.49954746
+alpha[7]: 3.4847163e-13, cut_error[7]: 0.49955195
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14240544
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.099 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.761 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.2757780654 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :4.876 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.028 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.98 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156074257 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :4.021 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.967 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.46449761988 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :5.989 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.146 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.513118665618 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.161 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.11 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.487306959485 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :5.133 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.02 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.145 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.603041450605 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.167 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.026 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.148 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.110206246203 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.179 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.059 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.432 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.335081382291 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :5.493 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.866 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.587747295392 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :3.886 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.039 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.476322780784 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :4.06 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.93 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.98211572502 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60563157037177
+Max violators: 1.016667 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 8: 1.033333 mins
+ITER 9
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 8.0231832e-13, cut_error[2]: 0.49964368
+alpha[3]: 8.02421e-13, cut_error[3]: 0.49952196
+alpha[4]: 8.0241723e-13, cut_error[4]: 0.49952196
+alpha[5]: 8.0145883e-13, cut_error[5]: 0.49958746
+alpha[6]: 8.02468e-13, cut_error[6]: 0.49954746
+alpha[7]: 8.0278518e-13, cut_error[7]: 0.49955195
+alpha[8]: 8.0257921e-13, cut_error[8]: 0.49954746
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14238452
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.08 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.469 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.275778067517 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :4.639 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.028 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.49 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156075862 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :5.531 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.022 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.55 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.4644976215395 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :4.58 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.04 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.512998316995 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.055 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.01 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.352 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.487306961296 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :5.369 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.08 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.02 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.603041452483 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.102 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.015 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.004 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.110206248073 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.021 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.027 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.528 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.334723229216 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :5.559 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.041 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.425 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.585497095401 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :4.468 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 5.492 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.4732466663045 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :5.513 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.92 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.982115726827 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60338136857354
+Max violators: 1.016667 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 9: 1.050000 mins
+ITER 10
+.Mosek solver: 0.000000 mins
+alpha[0]: 0.39172074, cut_error[0]: 0
+alpha[1]: 4.6082793, cut_error[1]: -0.16538064
+alpha[2]: 1.1087882e-10, cut_error[2]: 0.49964368
+alpha[3]: 1.1089593e-10, cut_error[3]: 0.49952196
+alpha[4]: 1.1089366e-10, cut_error[4]: 0.49952196
+alpha[5]: 1.1076456e-10, cut_error[5]: 0.49958746
+alpha[6]: 1.1089672e-10, cut_error[6]: 0.49954746
+alpha[7]: 1.1094724e-10, cut_error[7]: 0.49955195
+alpha[8]: 1.1090116e-10, cut_error[8]: 0.49954746
+alpha[9]: 1.1090726e-10, cut_error[9]: 0.49954746
+sigma_k: -0.15242404
+alphasum: 5
+g^T d: 0.14238452
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 458
+Test git
+Dataset Stats: N : 458	Np : 496	L : 51
+[combine hamming + F1] Log: Local search based dual decomposition
+[admm] Log: Starting point (Local Search) .... 0.9640948920709553 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 1.0 : (20565, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.087 s.
+[combine hamming + F1] Ajay: Time taken model lag : 6.326 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 1: Between Ytilde and YtildeStar, fraction of same labels is : 0.026200873362445413	Objective Value : 3723.275778595416 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 1 :6.433 s.
+[admm] Log: Starting point (Local Search) .... -237.03590510792904 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 202.0 : (3659, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.669 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 2: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5157.278156476963 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 2 :3.706 s.
+[admm] Log: Starting point (Local Search) .... -1792.4111928955333 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 59.871536981504136 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.016 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.662 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 3: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 5012.464498035463 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 3 :4.684 s.
+[admm] Log: Starting point (Local Search) .... -1379.0494906427787 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 41.5363160168504 : (533, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.011 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.71 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 4: Between Ytilde and YtildeStar, fraction of same labels is : 0.015283842794759825	Objective Value : 4904.513119115808 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 4 :4.725 s.
+[admm] Log: Starting point (Local Search) .... -1102.5888907754693 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 78.03532919435254 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.079 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 5: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4812.489735363442 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 5 :4.101 s.
+[admm] Log: Starting point (Local Search) .... -988.7836976135288 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 107.52763781819607 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.019 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.244 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 6: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4802.602973562925 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 6 :4.266 s.
+[admm] Log: Starting point (Local Search) .... -889.3249993350111 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 115.8138051859361 : (597, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.025 s.
+[combine hamming + F1] Ajay: Time taken model lag : 4.206 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 7: Between Ytilde and YtildeStar, fraction of same labels is : 0.004366812227074236	Objective Value : 4738.11091172958 match count is 0
+-------------------------------------
+[admm] Time taken for iteration 7 :4.233 s.
+[admm] Log: Starting point (Local Search) .... -798.2035916580459 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 123.28879721687909 : (661, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.946 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 8: Between Ytilde and YtildeStar, fraction of same labels is : 0.008733624454148471	Objective Value : 4692.33431979264 match count is 1
+-------------------------------------
+[admm] Time taken for iteration 8 :3.966 s.
+[admm] Log: Starting point (Local Search) .... -719.7352580133229 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 113.96016085606522 : (789, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.812 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 9: Between Ytilde and YtildeStar, fraction of same labels is : 0.010917030567685589	Objective Value : 4631.585161455572 match count is 2
+-------------------------------------
+[admm] Time taken for iteration 9 :3.832 s.
+[admm] Log: Starting point (Local Search) .... -672.113668142518 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 111.95207603002444 : (874, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.018 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.976 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 10: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4620.472975431664 match count is 3
+-------------------------------------
+[admm] Time taken for iteration 10 :3.996 s.
+[admm] Log: Starting point (Local Search) .... -646.2988280492802 : (4099, 412)
+[admm] Log: (Local Search) -- BEST POINT .... 86.49642880186653 : (853, 496)
+[combine hamming + F1] Ajay: Time taken loss lag : 0.017 s.
+[combine hamming + F1] Ajay: Time taken model lag : 3.815 s.
+-------------------------------------
+[combine hamming + F1] Subgradient-descent: In Iteration 11: Between Ytilde and YtildeStar, fraction of same labels is : 0.013100436681222707	Objective Value : 4553.98161284911 match count is 0
+-------------------------------------
+[combine hamming + F1] Met the stopping criterion. !!
+[combine hamming + F1] Fraction of same labels is  : 0.013100436681222707; Num of iters completed : 11	Objective diff : 77.60354860646203
+Max violators: 0.950000 mins
+sandip1729 margin : 1.0000ITER PRIMAL_OBJ 15.6688
+ITER REG_MASTER_OBJ: 10.8247
+ITER EXPECTED_DESCENT: -5.0858
+ITER PRIMLA_OBJ_B: 15.9105
+ITER RHO: 1.0000
+ITER ||w-w_b||^2: 0.2382
+ITER PRIMAL_LOWER_BOUND: 10.5865
+ITER V_K: -5.2049
+NULL STEP
+ITER 10: 0.983333 mins
+ Inner loop optimization finished.
+OUTER ITER 2: 12.666667 mins
+primal objective: 15.9105
+decrement: 0.0000
+cooling_eps: 1.25
+(onlinesvm) Before writing params to file (onlinesvm) After writing params to file Executing cmd (online SVM): export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx8G -cp java/bin:java/lib/* javaHelpers.InferLatentVarHelperAll tmp1/inf_lat_var_all dataset/train-riedel-10p.2.data.chunks/chunk.0 0 458 
+(OnlineSVM) .. finished outer_iter 2
+Total time: 22.666667 mins
+(ONLINE LEARNING) : FINISHED PROCESSING CHUNK (PSEUDO-DATAPOINT) 1 of 1
+(OnlineSVM) : Processed pseudo-datapoint -- primal objective sum: 15.9105
+(OnlineSVM) : EPOCH COMPLETE -- primal objective: 15.9105
+(ONLINE LEARNING) : EPOCH 0 DONE! .....
+ EPOCH 0 - Its All About Time! - : 22.683333 mins
+Executing cmd : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx4G -cp java/lib/*:java/bin/ evaluation.ClassifyStructEgAllOnline exp2_10_20_riedel_10p_2.model_1 dataset/testSVM.pos_r.data dataset/reidel_mapping 
+ClassifyStructEgAll: Finished processing 0 examples in 0.0 s.
+ClassifyStructEgAll:: Total time taken for 1758 number of examples : 7.996 s.
+Executing cmd : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx4G -cp java/lib/*:java/bin/:/usr/lib/lp_solve/ evaluation.ReidelEval exp2_10_20_riedel_10p_2.model_1.result 0.5 >>exp2_10_20_riedel_10p_2.model_1.result.stats
+Executing cmd : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx4G -cp java/lib/*:java/bin/ evaluation.ClassifyStructEgAllOnline exp2_10_20_riedel_10p_2.model dataset/testSVM.pos_r.data dataset/reidel_mapping 
+ClassifyStructEgAll: Finished processing 0 examples in 0.001 s.
+ClassifyStructEgAll:: Total time taken for 1758 number of examples : 8.002 s.
+Executing cmd : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ && java -Xmx4G -cp java/lib/*:java/bin/:/usr/lib/lp_solve/ evaluation.ReidelEval exp2_10_20_riedel_10p_2.model.result 0.5 >>exp2_10_20_riedel_10p_2.model.result.stats
+(ONLINE LEARNING) : Total Time Taken : : 23.316667 mins
+(ONLINE LEARNING) Reached here
+(ONLINE LEARNING) Complete dumping

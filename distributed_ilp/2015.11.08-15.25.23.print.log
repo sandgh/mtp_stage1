@@ -1,0 +1,73 @@
+Runs with loss types specified via a parameter
+
+Tmp file is tmp1/
+Weigting param of F is 0.5
+Frac Sim is 0.9
+Dataset Stats file is dataset/train-riedel-10p.1.stats
+Rho is 0
+isExhaustive is 0isLPrelaxation is 1Max feature index 202552
+Size of w vector 10532704
+Number of epochs (OnlineSVM Learning) : 40
+Number of chunks (OnlineSVM Learning) : 20
+--3: After 2nd malloc 
+(ONLINE SVM) Completed the memory alloc for the parameters
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Calling Java to split dataset for EPOCH 40
+Executing cmd : java -Xmx1G -cp java/bin:java/lib/*  javaHelpers.splitDatasetILP dataset/reidel_trainSVM.data 20 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.0
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.1
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.3
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.4
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.5
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.6
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.7
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.8
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.9
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.10
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.11
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.12
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.13
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.14
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.15
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.16
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.17
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.18
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Changed .... Reading chunked dataset
+Chunk trainfile : dataset/reidel_trainSVM.data.chunks/chunk.19
+(ONLINE LEARNING) : EPOCH 0
+C: 5
+Cdash: 5
+epsilon: 0.5
+sample.n: 134
+sm->sizePsi: 10532704
+Loss Type : 0
+--
+0 --> combination (Hamming + F1) + unnormalised
+-----
+OUTER ITER 0
+ITER 0 
+(before cutting plane) 
+
+LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/ 
+-Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/
+Executing cmd (onlineSVM) : export LD_LIBRARY_PATH=/home/sandip/sandip_mtp/lp_solve/:/home/sandip/sandip_mtp//mosek/5/tools/platform/linux64x86/bin/  && java -Xmx8G -cp java/bin:java/lib/* -Djava.library.path=/home/sandip/sandip_mtp/DownloadDirector/installer/cplex/bin/x86-64_sles10_4.1/:/home/sandip/sandip_mtp/lp_solve:/home/sandip/sandip_mtp/mosek/5/tools/platform/linux64x86/bin/ javaHelpers.FindMaxViolatorHelperAll tmp1/max_violator_all dataset/reidel_trainSVM.data.chunks/chunk.0 0.9 dataset/train-riedel-10p.1.stats 0 0 1 0.5 0 134
+Max violators: 0.083333 mins
