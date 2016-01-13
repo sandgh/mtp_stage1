@@ -35,6 +35,9 @@ for epoch=1:config.EPOCHS_COUNT  %%%%%%%%%%%% epoch length
     v=0;
     
     while abs(v-v_prev) > .00001 &&  abs(v-v_prev_prev) > .00001
+        
+        v_prev = v;
+        v_prev_prev = v_prev;
         %% initilize W and bias
         W = zeros(NO_OF_RELNS, max_feature);
         bias = zeros(NO_OF_RELNS, 1);
@@ -62,22 +65,34 @@ for epoch=1:config.EPOCHS_COUNT  %%%%%%%%%%%% epoch length
 
 
         %% SVM Prediction - Training  
-        [predictions_vect] = predictionSVM(latent_size, bias, W, feature_vect);
+        if(config.trainingPredictionType == 1)   %%Multiclass prediction
+            %% Multiclass prediction
+            [predictions_vect] = predictionSVM(latent_size, bias, W, feature_vect);
+
+           %%Joint Prediction (finds y from h - at least one assumtion)
+           [predicted_db_matrix] = jointPrediction(num_egs, NO_OF_RELNS, no_sentences_per_example, predictions_vect);
+
+           %%Calculate TP-TN-F_Score-W0-W1
+           %%% TP-TN 
+           [TP_micro, TN_micro] = find_TP_TN_micro(gold_db_matrix, predicted_db_matrix);
 
 
-       %% Joint Prediction (finds y from h - at least one assumtion)
-       [predicted_db_matrix] = jointPrediction(num_egs, NO_OF_RELNS, no_sentences_per_example, predictions_vect);
+           %%% F-Score
+           [v] = find_FScore_micro(config, TP_micro, TN_micro, Theta_micro);
 
-
-       %% Calculate TP-TN-F_Score-W0-W1
-       %%% TP-TN 
-       [TP_micro, TN_micro] = find_TP_TN_micro(gold_db_matrix, predicted_db_matrix);
-
-       v_prev = v;
-       v_prev_prev = v_prev;
-       %%% F-Score
-       [v] = find_FScore_micro(config, TP_micro, TN_micro, Theta_micro);
-
+        
+        elseif (config.trainingPredictionType == 2)     %% Naacle joint prediction
+            %% Naacle joint prediction
+            system('./evaluate_naacle_train.sh');
+            
+            fscorefile = fopen('f_score_joint_train.txt','r');
+            
+            v = fscanf(fscorefile,'%f');
+            
+            TP_micro = 0.0;
+            TN_micro = 0.0;
+        end
+           
        %%% w0-w1
        config.w_1_cost=1+config.BETA^2-v;
        config.w_0_cost=v*Theta_micro;
