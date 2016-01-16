@@ -1,4 +1,0 @@
-export LD_LIBRARY_PATH='/usr/lib/lp_solve'
-ulimit -c unlimited
-java -Xmx4G -cp java/lib/*:java/bin/:/usr/lib/lp_solve/ evaluation.ClassifyStructEgAll tmp1/inf_lat_var_all dataset/testSVM.pos_r.data dataset/reidel_mapping
-java -Xmx4G -cp java/lib/*:java/bin/:/usr/lib/lp_solve/ evaluation.ReidelEval tmp1/inf_lat_var_all.result 0.5 >> f_score_joint.txt
