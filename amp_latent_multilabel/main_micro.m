@@ -32,8 +32,9 @@ iteration_no = 0;
 
 while abs(v-v_prev) > .00001 &&  abs(v-v_prev_prev) > .00001
     iteration_no = iteration_no +1;
-    v_prev = v;
+    
     v_prev_prev = v_prev;
+    v_prev = v;
     
     %% initilize W and bias
     W = zeros(NO_OF_RELNS, max_feature);
