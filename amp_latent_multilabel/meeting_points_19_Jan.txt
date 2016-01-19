@@ -1,0 +1,29 @@
+
+1. tune c with diff values [1, 2, 5, 10, 20, 50, 100]
+
+2. normalize w0 & w1 (shd sum up to 1)
+
+3. Try both - 
+	libsvm - first example +1
+   	labels +1/-1
+
+Notes - Gaussian Kernel -
+f_K(x) = \sum_i \alpha_i K(x,x_i) + b
+K(x,x_i) = exp (- g *||x - x_i||^2)
+K(x,x_i) = <x,x_i>
+f_K(x) = <w,x>
+w = \sum_i \alpha_i x_i
+
+
+Later - 
+1. 
+change SVM params - 
+	-g 
+	g value depends on avg pairwise dist of the feature vect
+
+
+2. 
+Own SVM predicted_matrix(i,:), accuracy, decision_values] = svmpredict(gold_db_matrix(:,i), feature_vect, model_final(i));
+[TP_micro, TN_micro] = find_TP_TN_micro(gold_db_matrix, predicted_matrix')
+We need to include the hinge loss
+
