@@ -1,0 +1,40 @@
+
+function [data] =  generateTrainData(samples, isMixed)
+
+if(isMixed == 0)
+    %% Separated Data Generaation- 
+
+    mu = [-1 -1]; Sigma = [3 1; 1 2];
+    r1 = mvnrnd(mu, Sigma, samples);
+    plot(r1(:,1),r1(:,2),'ro'); 
+
+    hold on;
+
+    mu = [24 15]; Sigma = [1 0; 0 9];
+    r2 = mvnrnd(mu, Sigma, samples);
+    plot(r2(:,1),r2(:,2),'b+');
+
+    mu = [10 10]; Sigma = [3 0; 0 3];
+    r3 = mvnrnd(mu, Sigma, samples);
+    plot(r3(:,1),r3(:,2),'y*')
+
+else
+    %% Mixture Data Generation-
+
+    mu = [-1 -1]; Sigma = [3 1; 1 2];
+    r1 = mvnrnd(mu, Sigma, 5000);
+    figure;plot(r1(:,1),r1(:,2),'ro'); 
+
+    hold on;
+
+    mu = [9 -2]; Sigma = [3 0; 0 5];
+    r2 = mvnrnd(mu, Sigma, 5000);
+    plot(r2(:,1),r2(:,2),'b+');
+
+    mu = [6 7]; Sigma = [3 0; 0 3];
+    r3 = mvnrnd(mu, Sigma, 5000);
+    plot(r3(:,1),r3(:,2),'y*')
+
+end
+data = [r1,ones(samples,1);r2,2;r3,3];
+end

@@ -1,0 +1,32 @@
+
+-----------------------------------------------------------------------------------------------
+config.best_c - 5.000000
+config.best_g - 0.062500
+v_trn_best - 0.997565
+config.best_v_cv - 0.783300
+config.best_minimizing_function - 4.409466
+config.w_1_cost - 0.177535
+config.w_0_cost - 0.822465
+Test_f_score - 0.741133
+
+------------------------------------------------
+config.best_c - 8.000000
+config.best_g - 0.062500
+v_trn_best - 1.000000
+config.best_v_cv - 0.780198
+config.best_minimizing_function - 4.392003
+config.w_1_cost - 0.176825
+config.w_0_cost - 0.823175
+Test_f_score - 0.736412
+
+------------------------------------------------
+config.best_c - 8.000000
+config.best_g - 0.062500
+v_trn_best - 1.000000
+config.best_v_cv - 0.780198
+config.best_minimizing_function - 4.392003
+config.w_1_cost - 0.176825
+config.w_0_cost - 0.823175
+Test_f_score - 0.736412
+
+------------------------------------------------

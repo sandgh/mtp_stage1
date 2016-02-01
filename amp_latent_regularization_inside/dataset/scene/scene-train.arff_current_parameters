@@ -1,0 +1,90 @@
+
+-----------------------------------------------------------------------------------------------
+EPOCH - 1 	iteration - 1
+	v- 0.899340
+	TP_micro - 0.847589 	TN_micro - 0.991973 
+	w_1_cost- 1.100660 	 w_0_cost- 4.182001 
+EPOCH - 1 	iteration - 2
+	v- 0.882225
+	TP_micro - 0.789269 	TN_micro - 1.000000 
+	w_1_cost- 1.117775 	 w_0_cost- 4.102415 
+EPOCH - 1 	iteration - 3
+	v- 0.886580
+	TP_micro - 0.796267 	TN_micro - 1.000000 
+	w_1_cost- 1.113420 	 w_0_cost- 4.122666 
+EPOCH - 1 	iteration - 4
+	v- 0.885615
+	TP_micro - 0.794712 	TN_micro - 1.000000 
+	w_1_cost- 1.114385 	 w_0_cost- 4.118180 
+EPOCH - 1 	iteration - 5
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost- 4.120424 
+EPOCH - 1 	iteration - 6
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost- 4.120424 
+
+-----------------------------------------------------------------------------------------------
+EPOCH - 1 	iteration - 1
+	v- 0.899340
+	TP_micro - 0.847589 	TN_micro - 0.991973 
+	w_1_cost- 1.100660 	 w_0_cost - 4.182001 
+, Test_F_Score - 0.738723
+EPOCH - 1 	iteration - 2
+	v- 0.882225
+	TP_micro - 0.789269 	TN_micro - 1.000000 
+	w_1_cost- 1.117775 	 w_0_cost - 4.102415 
+, Test_F_Score - 0.695441
+EPOCH - 1 	iteration - 3
+	v- 0.886580
+	TP_micro - 0.796267 	TN_micro - 1.000000 
+	w_1_cost- 1.113420 	 w_0_cost - 4.122666 
+, Test_F_Score - 0.699226
+EPOCH - 1 	iteration - 4
+	v- 0.885615
+	TP_micro - 0.794712 	TN_micro - 1.000000 
+	w_1_cost- 1.114385 	 w_0_cost - 4.118180 
+, Test_F_Score - 0.698597
+EPOCH - 1 	iteration - 5
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost - 4.120424 
+, Test_F_Score - 0.698597
+EPOCH - 1 	iteration - 6
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost - 4.120424 
+, Test_F_Score - 0.698597
+
+-----------------------------------------------------------------------------------------------
+EPOCH - 1 	iteration - 1
+	v- 0.899340
+	TP_micro - 0.847589 	TN_micro - 0.991973 
+	w_1_cost- 1.100660 	 w_0_cost - 4.182001 
+	 Test_F_Score - 0.738723
+EPOCH - 1 	iteration - 2
+	v- 0.882225
+	TP_micro - 0.789269 	TN_micro - 1.000000 
+	w_1_cost- 1.117775 	 w_0_cost - 4.102415 
+	 Test_F_Score - 0.695441
+EPOCH - 1 	iteration - 3
+	v- 0.886580
+	TP_micro - 0.796267 	TN_micro - 1.000000 
+	w_1_cost- 1.113420 	 w_0_cost - 4.122666 
+	 Test_F_Score - 0.699226
+EPOCH - 1 	iteration - 4
+	v- 0.885615
+	TP_micro - 0.794712 	TN_micro - 1.000000 
+	w_1_cost- 1.114385 	 w_0_cost - 4.118180 
+	 Test_F_Score - 0.698597
+EPOCH - 1 	iteration - 5
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost - 4.120424 
+	 Test_F_Score - 0.698597
+EPOCH - 1 	iteration - 6
+	v- 0.886098
+	TP_micro - 0.795490 	TN_micro - 1.000000 
+	w_1_cost- 1.113902 	 w_0_cost - 4.120424 
+	 Test_F_Score - 0.698597

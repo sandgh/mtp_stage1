@@ -1,0 +1,42 @@
+
+-----------------------------------------------------------------------------------------------
+config.best_c - 2.000000
+config.best_g - 0.100000
+v_trn_best - 0.962853
+config.best_v_cv - 0.785563
+config.best_minimizing_function - 4.456616
+config.w_1_cost - 0.188266
+config.w_0_cost - 0.811734
+Test_f_score - 0.753336
+
+------------------------------------------------
+config.best_c - 4.000000
+config.best_g - 0.100000
+v_trn_best - 0.978153
+config.best_v_cv - 0.764957
+config.best_minimizing_function - 4.339719
+config.w_1_cost - 0.183630
+config.w_0_cost - 0.816370
+Test_f_score - 0.738043
+
+------------------------------------------------
+config.best_c - 4.000000
+config.best_g - 0.100000
+v_trn_best - 0.977137
+config.best_v_cv - 0.764957
+config.best_minimizing_function - 4.339719
+config.w_1_cost - 0.183935
+config.w_0_cost - 0.816065
+Test_f_score - 0.738231
+
+------------------------------------------------
+config.best_c - 4.000000
+config.best_g - 0.100000
+v_trn_best - 0.978153
+config.best_v_cv - 0.764957
+config.best_minimizing_function - 4.339719
+config.w_1_cost - 0.183630
+config.w_0_cost - 0.816370
+Test_f_score - 0.738786
+
+------------------------------------------------
