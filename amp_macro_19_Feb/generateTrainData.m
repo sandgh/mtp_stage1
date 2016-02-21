@@ -2,8 +2,8 @@
 function [data, datasize] =  generateTrainData(samples, isMixed)
 
 %% class imbalance
-samples1 = samples;
-samples2 = samples;
+samples1 = samples*2;
+samples2 = samples*2;
 samples3 = samples;
 samples4 = samples;
 
@@ -35,22 +35,21 @@ else
     %% Mixture Data Generation-
     
     %%% 4 Gussians high mixure
-    mu1 = [7 -2]; Sigma1 = [3 0; 0 5];
+    mu1 = [7 -1]; Sigma1 = [4 0; 0 4];
     r2 = mvnrnd(mu1, Sigma1, samples2);
     figure(1);plot(r2(:,1),r2(:,2),'b+');
     title('Training Data');
     hold on;
     
-    mu2 = [0 -1.5]; Sigma2 = [4 1; 1 3];
+    mu2 = [-1.5 -1.5]; Sigma2 = [4 1; 1 3];
     r1 = mvnrnd(mu2, Sigma2, samples1);
     plot(r1(:,1),r1(:,2),'r+'); 
 
-
-    mu3 = [3 3]; Sigma3 = [1.5 0; 0 1];
+    mu3 = [6.5 -1]; Sigma3 = [1.5 0; 0 1];
     r3 = mvnrnd(mu3, Sigma3, samples3);
     plot(r3(:,1),r3(:,2),'y+');
 
-    mu4 = [-1 2]; Sigma4 = [1 0; 0 1];
+    mu4 = [-2 -1.5]; Sigma4 = [1 0; 0 1];
     r4 = mvnrnd(mu4, Sigma4, samples4);
     plot(r4(:,1),r4(:,2),'g+');
     hold off;

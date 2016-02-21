@@ -104,7 +104,7 @@ for curr_c = config.c_range
         config.w_0_cost=0.5;
         iteration_no = 0;
         %% AMP
-        while (abs(v_trn-v_prev) > .00001 &&  abs(v_trn-v_prev_prev) > .00001)  && iteration_no < 10
+        while ((v_trn==0 && iteration_no < 10) || (abs(v_trn-v_prev) > .00001 &&  abs(v_trn-v_prev_prev) > .00001)) && (iteration_no < 10)
             iteration_no = iteration_no +1;
             
             v_prev_prev = v_prev;
@@ -162,7 +162,7 @@ for curr_c = config.c_range
         [v_cv] = find_FScore_macro(config, TP_macro_cv, TN_macro_cv, Theta_macro_cv_vect(i,1));
         v_cv_obj = (1+config.BETA^2-v_cv)*TP_macro_cv + v_cv*Theta_macro_cv_vect(i,1)*TN_macro_cv;
         
-        if(best_v_cv(i,1)<v_cv)
+        if(best_v_cv(i,1)<=v_cv)
             config.model_final(i) = model_final;
             v_vect(i) = v_trn;
             v_vect_cv(i) = v_cv;
