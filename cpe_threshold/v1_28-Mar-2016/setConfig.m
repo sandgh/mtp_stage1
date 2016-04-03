@@ -6,6 +6,7 @@ function [config] = setConfig()
 
 %% Mention the Params in this file
     config.libSVMPath = '../libsvm-3.21/matlab';
+    addpath(config.libSVMPath);
     config.BETA = 1;
     config.EPOCHS_COUNT = 1;
     config.TEST_RELATIONS = -1;
