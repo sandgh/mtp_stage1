@@ -21,7 +21,7 @@ for i=1:ycol
     pstv_idx = find(y_labels(:,i)>0,1);
     
     
-    %% @todo - proper cross validation
+    %% @todo - proper cross validation??
     
     max_f_score = 0;
     thersh_idx = 1;
