@@ -2,20 +2,26 @@
 %%% y_labels - binary matrix of sntnce X reln (hiddenlabels)
 %%%
 
-function [thresholds, config] = cpe_train(config, y_labels)
+function [config] = cpe_train(config, y_labels)
 
 [yrow, ycol] = size(y_labels);
 
-% initialize threshold for each reln
-thresholds = zeros(1,ycol);
 
 %% loop over all realtions
 for i=1:ycol
     
+    
+    %% if no +ve (-ve) labels present then skip the training
+    if(sum(y_labels(:,i)) == 0 || sum(y_labels(:,i)) == yrow)
+        continue;
+    end    
+
+    
     %% @todo set the first training data as +ve example
     pstv_idx = find(y_labels(:,i)>0,1);
     
-    %% @todo cross validation
+    
+    %% @todo - proper cross validation
     
     max_f_score = 0;
     thersh_idx = 1;
@@ -29,6 +35,7 @@ for i=1:ycol
         %% get the model for curr reln
         models(i) = svmtrain([y_labels(pstv_idx,i); y_labels(:,i)], [config.feature_vect(pstv_idx,:); config.feature_vect], params);
         
+        
         %% predict cpe's
         [predictions, accuracy_trn, cpe] = svmpredict(y_labels(:,i), config.feature_vect, models(i), '-b 1');
         
@@ -39,7 +46,7 @@ for i=1:ycol
         if(f_score > max_f_score)
             
             %update best thresh
-            thresholds(1,i) = curr_thresholds;
+            config.thresholds(1,i) = curr_thresholds;
             max_f_score = f_score;
             
             %needs best models for testing
@@ -50,7 +57,7 @@ for i=1:ycol
             
         end
         
-        config.testfsc_c(i,c) = f_score;
+        config.testfsc_c(i,c+1) = f_score;
     end
     
 end
