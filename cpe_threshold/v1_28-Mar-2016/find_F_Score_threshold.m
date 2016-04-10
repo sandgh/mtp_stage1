@@ -23,6 +23,7 @@ for i=1:ent_mntn_cnt_row
    
     %the atleast one assumption
     %check if any of the mention is 1 for curr reln for the curr ent_pair
+    %%@todo find the MAX
     predicted_y_labels(i,1) = sum(cpe_binary(count+1:config.ent_mntn_cnt(i,1)+count))>0;
     
     %set the count to the last mention of the curr ent pair

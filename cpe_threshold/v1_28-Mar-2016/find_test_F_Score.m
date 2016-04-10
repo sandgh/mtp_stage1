@@ -11,8 +11,9 @@ for i=1:config.no_of_relns
     %% get cpe's from libsvm
     
     %the y_labels are given ones as we don't need the accuracy of svm
-    [predictions, accuracy_trn, cpe] = svmpredict(ones(config.test_no_of_snts,1), config.test_feature_vect, config.models(i), '-b 1');
-    
+%     [predictions, accuracy_trn, cpe] = svmpredict(ones(config.test_no_of_snts,1), config.test_feature_vect, config.models(i), '-b 1');
+    [predictions, accuracy_trn, cpe] = predict(ones(config.test_no_of_snts,1), sparse(config.test_feature_vect), config.models(i), '-b 1');
+
     
     %% make cpes > thresh = 1
     cpe_binary = cpe.*0;

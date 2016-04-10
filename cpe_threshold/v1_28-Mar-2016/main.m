@@ -62,7 +62,10 @@ NO_OF_RELN = size(y_labels,2);
 
 %%call cpe with initial labels
 [config]  = cpe_train(config, y_labels);
-
+%find f-score
+[config] = find_test_F_Score(config);
+%write the final f-scores to file
+write_results_to_file( config );
 
 %% update mentionlabels as per the curr thresh & cpe
 

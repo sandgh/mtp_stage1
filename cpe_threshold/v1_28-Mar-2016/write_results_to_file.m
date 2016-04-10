@@ -17,7 +17,7 @@ end
 
 fprintf(fid_parameters,'---------\n');
 fprintf(fid_parameters, '%f', sum(config.f_score(:,1))/config.no_of_relns);
-
+fprintf(fid_parameters,'\n---------\n');
 
 %% close the file
 
