@@ -16,7 +16,7 @@ config.file_name = 'dataset/v.small.data1';
 config.test_file_name = 'dataset/testSVM.pos_r.data1';
 config.result_file_name = 'results/output.txt';
 
-config.sntnce_k_prcnt = 0.2;
+config.sntnce_k_prcnt = 0.3;
 
 
 end

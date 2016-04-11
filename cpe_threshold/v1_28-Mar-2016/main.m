@@ -91,7 +91,12 @@ for i = 1:config.EPOCHS_COUNT
 %     end
     
     %find sentence label hidden vars
-    [ y_labels ] = gen_latent_rand_k( config );
+%     [ y_labels ] = gen_latent_rand_k( config );
+    
+    %choose k senceses from the ent_pair
+    %k depends on how many sntnces >thresh
+    [ y_labels ] = gen_latent_cpe_k( config );
+    
     
     [config]  = cpe_train(config, y_labels);
     
