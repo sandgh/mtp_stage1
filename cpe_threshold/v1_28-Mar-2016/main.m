@@ -43,8 +43,15 @@ config.test_fsc=zeros(1,config.no_of_relns);
 
 %% the initial guess of ylabels
 
+%initialize CPEs as 0.5
+config.cpe=zeros(config.no_of_snts, config.no_of_relns) + 0.5;
+
 % sentence label hidden vars (1000 snts X relations [binary labels])
-y_labels = round(rand(config.no_of_snts,config.no_of_relns));
+% y_labels = round(rand(config.no_of_snts,config.no_of_relns));
+
+
+%sentence label hidden vars (1000 snts X relations [binary labels])
+[ y_labels ] = gen_latent_rand_k( config );
 
 %@todo? - read the infer latent var result??
 
@@ -74,11 +81,13 @@ for i = 1:config.EPOCHS_COUNT
     
     %% update y labels as per the curr thresholds
     
-    y_labels = config.cpe.*0;
+%     y_labels = config.cpe.*0;
+%     for r = 1:NO_OF_RELN
+%         y_labels(config.cpe(:,r)>config.thresholds(1,r),r) = 1;
+%     end
     
-    for r = 1:NO_OF_RELN
-        y_labels(config.cpe(:,r)>config.thresholds(1,r),r) = 1;
-    end
+    %find sentence label hidden vars
+    [ y_labels ] = gen_latent_rand_k( config );
     
     [config]  = cpe_train(config, y_labels);
     

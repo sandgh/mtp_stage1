@@ -27,11 +27,11 @@ for i=1:config.no_of_relns
         
         %the atleast one assumption
         %check if any of the mention is 1 for curr reln for the curr ent_pair
-        predicted_y_labels(j,1) = sum(cpe_binary(count+1:config.ent_mntn_cnt(j,1)+count))>0;
+        predicted_y_labels(j,1) = sum(cpe_binary(count+1:config.test_ent_mntn_cnt(j,1)+count))>0;
         
         %set the count to the last mention of the curr ent pair
         %in the next loop we start from count+1
-        count = config.ent_mntn_cnt(j,1)+count;
+        count = config.test_ent_mntn_cnt(j,1)+count;
         
         
     end
