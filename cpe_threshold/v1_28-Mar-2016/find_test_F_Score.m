@@ -4,12 +4,16 @@ function [ config ] = find_test_F_Score( config )
 [ent_mntn_cnt_row, ent_mntn_cnt_col] = size(config.test_ent_mntn_cnt);
 
 %% loop over all relns
-
+config.pstv_train_classes = 0;
 for i=1:config.no_of_relns
     
+    if(i>size(config.models,2) || size(config.models(i).w , 1) == 0)
+        config.f_score(i,1)=0;
+        continue;
+    end
     
+    config.pstv_train_classes = config.pstv_train_classes+1;
     %% get cpe's from libsvm
-    
     %the y_labels are given ones as we don't need the accuracy of svm
 %     [predictions, accuracy_trn, cpe] = svmpredict(ones(config.test_no_of_snts,1), config.test_feature_vect, config.models(i), '-b 1');
     [predictions, accuracy_trn, cpe] = predict(ones(config.test_no_of_snts,1), sparse(config.test_feature_vect), config.models(i), '-b 1');
@@ -36,10 +40,14 @@ for i=1:config.no_of_relns
         
     end
     
+    %this case arise some times
+    if(sum(predicted_y_labels) + sum(config.test_gold_y_labels(:,i)) == 0)
+        config.f_score(i,1) = 1;
+        continue;
+    end
     %% f_score = 2 * ( sum (y'.*y) ) / ( sum (y') + sum (y) )
     config.f_score(i,1) = 2*sum(predicted_y_labels.*config.test_gold_y_labels(:,i)) ...
                         /(sum(predicted_y_labels) + sum(config.test_gold_y_labels(:,i)));
-    
     
 end
 

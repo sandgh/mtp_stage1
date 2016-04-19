@@ -3,14 +3,15 @@ config = setConfig();
 
 %% READ TRAININTG DATA
 
+disp('Reading training data...');
 %%read synth data
-config = generate_sparse_synth_data(config);
+% config = generate_sparse_synth_data(config);
 
 %%read naacl files
 % config = read_naacl_data(config);
 
 %%read naacl files in sparse format
-% config = read_sparse_naacl_data(config);
+config = read_sparse_naacl_data(config);
 
 %%read stored data (to skip already read data)
 % config = load_naacl_data(config);
@@ -18,18 +19,21 @@ config = generate_sparse_synth_data(config);
 
 %% READ TESTING DATA
 
+disp('Reading test data...');
 %%read synth data
-config = generate_sparse_test_synth_data(config);
+% config = generate_sparse_test_synth_data(config);
 
 %%read naacl files
 % config = read_test_naacl_data(config);
 
 %%read naacl files in sparse format
-% config = read_sparse_test_naacl_data(config);
+config = read_sparse_test_naacl_data(config);
 
 %%read stored data (to skip already read data)
 % config = load_test_naacl_data(config);
 
+
+disp('data reading done...');
 
 %% set params
 
@@ -49,7 +53,8 @@ config.test_fsc=zeros(1,config.no_of_relns);
 
 %initialize CPEs as 0.5
 config.cpe=zeros(config.no_of_snts, config.no_of_relns) + 0.5;
-
+config.epoch_curr = 1;
+config.thresholds = zeros(1,config.no_of_relns);
 % sentence label hidden vars (1000 snts X relations [binary labels])
 % y_labels = round(rand(config.no_of_snts,config.no_of_relns));
 
@@ -62,7 +67,7 @@ config.cpe=zeros(config.no_of_snts, config.no_of_relns) + 0.5;
 
 %% open the results file
 
-fid_parameters = fopen(config.result_file_name, 'a');
+fid_parameters = fopen(config.result_file_name, 'w');
 fprintf(fid_parameters,'\n-------------------- Start --------------------\n');
 fclose(fid_parameters);
 
