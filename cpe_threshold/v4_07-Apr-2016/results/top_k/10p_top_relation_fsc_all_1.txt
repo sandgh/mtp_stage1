@@ -1,0 +1,27 @@
+
+0.218613 ( 20 ) precision 0.177800  recall 0.733368  f-micro 0.286211 
+0.215309 ( 20 ) precision 0.229749  recall 0.684914  f-micro 0.344079 
+0.218149 ( 20 ) precision 0.257004  recall 0.664746  f-micro 0.370691 
+0.220376 ( 20 ) precision 0.274681  recall 0.657674  f-micro 0.387515 
+0.218240 ( 20 ) precision 0.286578  recall 0.650707  f-micro 0.397911 
+0.211855 ( 20 ) precision 0.295001  recall 0.643007  f-micro 0.404448 
+0.206654 ( 20 ) precision 0.307726  recall 0.633091  f-micro 0.414148 
+0.209317 ( 20 ) precision 0.312037  recall 0.626179  f-micro 0.416516 
+0.211919 ( 20 ) precision 0.315302  recall 0.620511  f-micro 0.418136 
+0.213972 ( 20 ) precision 0.317607  recall 0.616082  f-micro 0.419138 
+0.215378 ( 20 ) precision 0.319667  recall 0.612648  f-micro 0.420123 
+0.214366 ( 20 ) precision 0.322943  recall 0.610093  f-micro 0.422331 
+0.215002 ( 20 ) precision 0.324008  recall 0.608534  f-micro 0.422865 
+0.215866 ( 20 ) precision 0.326108  recall 0.607386  f-micro 0.424370 
+0.216651 ( 20 ) precision 0.326633  recall 0.606042  f-micro 0.424485 
+0.217497 ( 20 ) precision 0.328037  recall 0.604963  f-micro 0.425403 
+0.218708 ( 20 ) precision 0.323575  recall 0.609281  f-micro 0.422676 
+0.220549 ( 20 ) precision 0.325027  recall 0.608463  f-micro 0.423715 
+0.219045 ( 20 ) precision 0.320810  recall 0.612087  f-micro 0.420976 
+0.215216 ( 20 ) precision 0.317424  recall 0.615244  f-micro 0.418784 
+0.213971 ( 20 ) precision 0.314262  recall 0.617925  f-micro 0.416634 
+0.213672 ( 20 ) precision 0.311298  recall 0.620291  f-micro 0.414551 
+0.207557 ( 20 ) precision 0.312609  recall 0.617829  f-micro 0.415157 
+0.202854 ( 20 ) precision 0.313709  recall 0.615244  f-micro 0.415538 
+0.202853 ( 20 ) precision 0.314675  recall 0.612865  f-micro 0.415838 
+0.201143 ( 20 ) precision 0.316013  recall 0.610690  f-micro 0.416500 
