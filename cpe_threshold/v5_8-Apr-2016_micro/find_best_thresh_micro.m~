@@ -1,0 +1,36 @@
+%%% This function
+%%%
+%%%
+
+
+function[threshold , max_f_score,preci] = find_best_thresh_micro(config, cpe,c)
+
+%% sort cpes (1st col of CPE is the +ve class)
+
+global_cpe= reshape(cpe,size(cpe,1)*size(cpe,2),1);
+sort_cpe = unique(sort(global_cpe(:,1)));
+
+%get the threshold ranges (mid val of every pair)
+sort_cpe_thresh = (sort_cpe + [sort_cpe(2:end,1);0 ])/2;
+
+[thr_row, thr_col] = size(sort_cpe_thresh);
+
+
+%% find max f-score from all the thresholds
+
+max_f_score = 0;
+thersh_idx = 1;
+
+for i=1:thr_row
+    
+    temp_fsc = find_F_Score_threshold(config, cpe, sort_cpe_thresh(i,1),c);
+    if(temp_fsc > max_f_score)
+        thersh_idx = i;
+        max_f_score = temp_fsc;
+    end
+    
+end
+disp(max_f_score);
+threshold =  sort_cpe_thresh(thersh_idx,1);
+
+end
