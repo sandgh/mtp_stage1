@@ -44,8 +44,10 @@ for i=1:config.no_of_relns
         %%choose k% sentences probabilistically.
         %%high CPE leads high prob the sentences will be marked true.
         
-        choose_k = datasample(1:sntnc_cnt, k_sntnce_true, 'Replace',...
-                            false, 'Weights',curr_cpes) + curr_idx_start;
+%         choose_k = datasample(1:sntnc_cnt, k_sntnce_true, 'Replace',...
+%                             false, 'Weights',curr_cpes) + curr_idx_start;
+        
+        choose_k = my_datasample_2(curr_cpes', k_sntnce_true) + curr_idx_start;
         
         latent_y_labels(choose_k,i) = 1;
         

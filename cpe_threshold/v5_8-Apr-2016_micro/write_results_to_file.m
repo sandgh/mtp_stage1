@@ -1,4 +1,4 @@
-function [ ] = write_results_to_file( config )
+function [  ] = write_results_to_file( config )
 
 fid_parameters_thresh = fopen([config.result_file_name, '_thresh_', num2str(config.sntnce_k_prcnt), '.txt'], 'a');
 fid_parameters_fsc_cls = fopen([config.result_file_name, '_fsc_cls_', num2str(config.sntnce_k_prcnt), '.txt'], 'a');
@@ -17,6 +17,7 @@ for i=1:config.no_of_relns
 end
 
 fprintf(fid_parameters_fsc_cls, '\n');
+fprintf(fid_parameters_thresh, '%f,',config.threshold);
 fprintf(fid_parameters_thresh, '\n');
 
 %% prints total F-Score (sum_f_score/no_of_relns)
@@ -39,10 +40,6 @@ fprintf(fid_parameters_fsc_all, ' f-micro %f ', f_micro);
 fclose(fid_parameters_thresh);
 fclose(fid_parameters_fsc_cls);
 fclose(fid_parameters_fsc_all);
-
-config.TP=0;
-config.FN=0;
-config.FP=0;
 
 
 end

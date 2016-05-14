@@ -1,4 +1,4 @@
-clc; 
+clc; clear;
 config = setConfig();
 
 %% READ TRAININTG DATA
@@ -36,105 +36,113 @@ config = load_test_naacl_data(config);
 disp('data reading done...');
 
 %% the k% loop
-for k_percent = [1]
-
-config.sntnce_k_prcnt = k_percent;
-
-fid_parameters_thresh = fopen([config.result_file_name, '_thresh_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
-fid_parameters_fsc_cls = fopen([config.result_file_name, '_fsc_cls_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
-fid_parameters_fsc_all = fopen([config.result_file_name, '_fsc_all_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
-
-fid_parameters_fsc_all_training = fopen([config.result_file_name_train, '_train_all_.txt'], 'w');
-fid_parameters_fsc_all_training = fopen([config.result_file_name_train, '_train_summary_.txt'], 'w');
-
-
-fclose(fid_parameters_thresh);
-fclose(fid_parameters_fsc_cls);
-fclose(fid_parameters_fsc_all);
-
-%% set params
-
-config.no_of_relns = size(config.gold_y_labels,2);
-config.no_of_snts = size(config.feature_vect,1);
-
-config.test_no_of_snts = size(config.test_feature_vect,1);
-
-% initialize
-% config.cpe=zeros(config.no_of_snts,config.no_of_relns);
-% config.threshold=0;
-
-
-%% the initial guess of ylabels
-
-%initialize CPEs as 0.5
-config.cpe=zeros(config.no_of_snts, config.no_of_relns) + 0.5;
-config.epoch_curr = 1;
-config.threshold = 0;
-% sentence label hidden vars (1000 snts X relations [binary labels])
-% y_labels = round(rand(config.no_of_snts,config.no_of_relns));
-
-config.TP=0;
-config.FN=0;
-config.FP=0;
-
-
-%sentence label hidden vars (1000 snts X relations [binary labels])
-[ y_labels ] = gen_latent_rand_k( config );
-
-%@todo? - read the infer latent var result??
-
-
-%% open the results file
-
-% fid_parameters = fopen(config.result_file_name, 'w');
-% fprintf(fid_parameters,'\n-------------------- Start --------------------\n');
-% fclose(fid_parameters);
-
-
-%% train the model
-
-NO_OF_RELN = size(y_labels,2);
-
-%%call cpe with initial labels
-[config]  = cpe_train(config, y_labels);
-%find f-score
-[config] = find_test_F_Score(config);
-%write the final f-scores to file
-write_results_to_file( config );
-
-%% update mentionlabels as per the curr thresh & cpe
-%@todo - decide the stopping criteria
-for i = 1:config.EPOCHS_COUNT
+for k_percent = config.sntnce_k_prcnt
     
-    %% update y labels as per the curr thresholds
+    config.sntnce_k_prcnt = k_percent;
     
-%     y_labels = config.cpe.*0;
-%     for r = 1:NO_OF_RELN
-%         y_labels(config.cpe(:,r)>config.thresholds(1,r),r) = 1;
-%     end
+    fid_parameters_thresh = fopen([config.result_file_name, '_thresh_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
+    fid_parameters_fsc_cls = fopen([config.result_file_name, '_fsc_cls_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
+    fid_parameters_fsc_all = fopen([config.result_file_name, '_fsc_all_', num2str(config.sntnce_k_prcnt), '.txt'], 'w');
     
-    %find sentence label hidden vars
-%     [ y_labels ] = gen_latent_rand_k( config );
-    
-    %choose k senceses from the ent_pair
-    %k depends on how many sntnces >thresh
-    [ y_labels ] = gen_latent_cpe_k( config );
+    fid_parameters_fsc_all_training = fopen([config.result_file_name_train, '_train_all_.txt'], 'w');
+    fid_parameters_fsc_all_training = fopen([config.result_file_name_train, '_train_summary_.txt'], 'w');
     
     
+    fclose(fid_parameters_thresh);
+    fclose(fid_parameters_fsc_cls);
+    fclose(fid_parameters_fsc_all);
+    
+    %% set params
+    
+    config.no_of_relns = size(config.gold_y_labels,2);
+    config.no_of_snts = size(config.feature_vect,1);
+    
+    config.test_no_of_snts = size(config.test_feature_vect,1);
+    
+    % initialize
+    % config.cpe=zeros(config.no_of_snts,config.no_of_relns);
+    % config.threshold=0;
+    
+    
+    %% the initial guess of ylabels
+    
+    %initialize CPEs as 0.5
+    config.cpe=zeros(config.no_of_snts, config.no_of_relns) + 0.5;
+    config.epoch_curr = 1;
+    config.threshold = 0;
+    % sentence label hidden vars (1000 snts X relations [binary labels])
+    % y_labels = round(rand(config.no_of_snts,config.no_of_relns));
+    
+    config.pred_y_lbl = zeros(config.EPOCHS_COUNT, config.no_of_relns, length(config.test_ent_mntn_cnt));
+    config.TP=0;
+    config.FN=0;
+    config.FP=0;
+    
+    
+    %sentence label hidden vars (1000 snts X relations [binary labels])
+    [ y_labels ] = gen_latent_rand_k( config );
+    
+    %@todo? - read the infer latent var result??
+    
+    
+    %% open the results file
+    
+    % fid_parameters = fopen(config.result_file_name, 'w');
+    % fprintf(fid_parameters,'\n-------------------- Start --------------------\n');
+    % fclose(fid_parameters);
+    
+    
+    %% train the model
+    
+    NO_OF_RELN = size(y_labels,2);
+    
+    %%call cpe with initial labels
     [config]  = cpe_train(config, y_labels);
+    %find f-score
+    [config] = find_test_F_Score(config);
+    %write the final f-scores to file
+    write_results_to_file( config );
     
+    %% update mentionlabels as per the curr thresh & cpe
+    %@todo - decide the stopping criteria
+    for i = 1:config.EPOCHS_COUNT
+        
+        config.epoch_curr = i+1;
+        %% update y labels as per the curr thresholds
+        
+        %     y_labels = config.cpe.*0;
+        %     for r = 1:NO_OF_RELN
+        %         y_labels(config.cpe(:,r)>config.thresholds(1,r),r) = 1;
+        %     end
+        
+        %find sentence label hidden vars
+        %     [ y_labels ] = gen_latent_rand_k( config );
+        
+        %choose k senceses from the ent_pair
+        %k depends on how many sntnces >thresh
+        [ y_labels ] = gen_latent_cpe_k( config );
+        
+        
+        [config]  = cpe_train(config, y_labels);
+        
+        
+        %% testing
+        
+        [config] = find_test_F_Score(config);
+        
+        
+        write_results_to_file( config );
+        
+        config.TP=0;
+        config.FN=0;
+        config.FP=0;
+        
+        
+    end  %% end of epochs
     
-   %% testing
-   
-   [config] = find_test_F_Score(config);
-   
-
-   write_results_to_file( config );
-   
-   
-   
-end  %% end of epochs
-
+    save_pred_y_lbls = config.pred_y_lbl;
+    save([config.result_file_name, num2str(k_percent) '_pred_y_lbls.mat'], 'save_pred_y_lbls');
+    
 end %% end of the k% loop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

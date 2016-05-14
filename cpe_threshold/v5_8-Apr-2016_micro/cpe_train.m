@@ -34,7 +34,8 @@ for c=config.c_range
         
         %% set the c-range
         %         params = ['-s 0 -b 1 -t 2 -c ', num2str(2^c)]
-        params = ['-s 0 -c ', num2str(2^c)]
+        [config.epoch_curr, i]
+        params = ['-s 0 -q -c ', num2str(2^c)];
         %
         
         %% get the model for curr reln
@@ -44,7 +45,7 @@ for c=config.c_range
         
         %% predict cpe's
         %         [predictions, accuracy_trn, cpe] = svmpredict(y_labels(:,i), config.feature_vect, models(i), '-b 1');
-        [predictions, accuracy_trn, a] = predict(y_labels(:,i), sparse(config.feature_vect), models(i), '-b 1');
+        [predictions, accuracy_trn, a] = predict(y_labels(:,i), sparse(config.feature_vect), models(i), '-q -b 1');
         cpe(:,i)=a(:,1);
     end
     

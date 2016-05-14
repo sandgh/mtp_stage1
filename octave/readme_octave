@@ -1,0 +1,6 @@
+sudo apt-get install octave
+sudo apt-get install octave-control octave-image octave-io octave-optim octave-signal octave-statistics
+sudo apt-get install liboctave-dev
+
+go to libsvm-->matlab directory
+from octave run make.m (it may give some error, still it'll work)
