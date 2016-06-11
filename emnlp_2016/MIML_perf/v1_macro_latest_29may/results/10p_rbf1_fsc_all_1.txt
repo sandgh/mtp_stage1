@@ -1,0 +1,4 @@
+
+0.621071 ( 18 ) precision 0.172131  recall 0.984375  f-micro 0.293023 
+0.755492 ( 18 ) precision 0.240229  recall 0.984375  f-micro 0.386207 
+0.821555 ( 18 ) precision 0.285174  recall 0.981771  f-micro 0.441970 

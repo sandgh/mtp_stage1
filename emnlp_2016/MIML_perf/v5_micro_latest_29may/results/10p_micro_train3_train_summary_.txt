@@ -1,0 +1,8 @@
+
+ c 1.000000  best_threshold 0.509603  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
+ c 1.000000  best_threshold 0.474320  precision 1.000000  recall 1.000000  f-micro 1.000000 
